@@ -1,0 +1,35 @@
+{
+  "name": "zhaw-stundenplan",
+  "version": "1.0.0",
+  "description": "Telegram bot that scrapes zhaw website for timetable",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoi15A/zhaw-stundenplan.git"
+  },
+  "keywords": [
+    "telegram-bot",
+    "telegram",
+    "javascript",
+    "zhaw"
+  ],
+  "author": "Austin Albrecht",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Hoi15A/zhaw-stundenplan/issues"
+  },
+  "homepage": "https://github.com/Hoi15A/zhaw-stundenplan#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cheerio-tableparser": "^1.0.1",
+    "node-fetch": "^2.6.0",
+    "telegraf": "^3.32.0"
+  }
+}
