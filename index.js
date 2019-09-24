@@ -14,6 +14,10 @@ bot.command('start', ctx => {
   ctx.replyWithMarkdown('Fetch your timetable with:\n\n`/today <username>`\n`/yesterday <username>`\n`/tomorrow <username>`')
 })
 
+bot.command('chatid', ctx => {
+  ctx.replyWithMarkdown(`ID: \`${ctx.chat.id}\``)
+})
+
 bot.command('today', async ctx => {
   ctx.message.text = ctx.message.text.replace(/\/today(\S+)?/, '').trim()
   sendDay(ctx, 0, '')
